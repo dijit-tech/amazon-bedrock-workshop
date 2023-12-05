@@ -12,7 +12,7 @@ from botocore.config import Config
 
 def get_bedrock_client(
     assumed_role: Optional[str] = None,
-    region: Optional[str] = None,
+    region: Optional[str] = "us-east-1",
     runtime: Optional[bool] = True,
 ):
     """Create a boto3 client for Amazon Bedrock, with optional configuration overrides
